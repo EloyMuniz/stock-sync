@@ -1,8 +1,8 @@
 # stock-sync
 A data collection and validation system for inventory management using barcode scanning.
-# Backend Project CNPJ
+# Backend Project stock-sync
 
-Este é um projeto backend desenvolvido com Node.js, Express e Prisma ORM.
+Este é um projeto backend desenvolvido com Node.js, Express e Type ORM.
 
 ## Tecnologias Utilizadas
 
@@ -25,11 +25,6 @@ npm install
 ```
 
 ### Scripts Disponíveis
-
-- **Gerar Cliente Prisma**:
-  ```bash
-  npx typeorm migration:generate -d src/data-source.ts -n NomeDaMigracao
-  ```
 - **Executar Migrações**:
   ```bash
   npx typeorm migration:run -d src/data-source.ts
