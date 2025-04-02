@@ -25,8 +25,10 @@
   },
   "scripts": {
     "migration:generate": "npx typeorm migration:generate -d src/data-source.ts -n NomeDaMigracao",
+    "migration:create": "npx typeorm migration:create -d src/migrations/NomeDaMigracao",
     "migration:run": "npx typeorm migration:run -d src/data-source.ts",
     "migration:revert": "npx typeorm migration:revert -d src/data-source.ts",
+    "migration:show": "npx typeorm migration:show -d src/data-source.ts",
     "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/index.ts",
     "build": "tsup src",
     "start": "node dist/index.js"
