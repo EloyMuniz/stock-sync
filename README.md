@@ -1,5 +1,7 @@
 # stock-sync
+
 A data collection and validation system for inventory management using barcode scanning.
+
 # Backend Project stock-sync
 
 Este é um projeto backend desenvolvido com Node.js, Express e Type ORM.
@@ -25,10 +27,24 @@ npm install
 ```
 
 ### Scripts Disponíveis
-- **Executar Migrações**:
+
+- **Criação da migração**:
+  ```bash
+  npx typeorm migration:generate -d src/data-source.ts -n NomeDaMigracao
+  ```
+- **Rodar as migrações no banco**:
+
   ```bash
   npx typeorm migration:run -d src/data-source.ts
   ```
+
+- **Reverter última migração (se necessário)**:
+
+  ```bash
+  npx typeorm migration:revert -d src/data-source.ts
+
+  ```
+
 - **Modo Desenvolvimento**:
   ```bash
   yarn dev
@@ -75,4 +91,3 @@ backend-project-cnpj/
 ---
 
 Este README pode ser melhorado futuramente com mais detalhes sobre endpoints e exemplos de uso da API.
-
