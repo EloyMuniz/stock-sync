@@ -65,6 +65,7 @@ backend-project-cnpj/
 ├── src/                  # Código fonte
 │   ├── errors/           # Erros customizáveis
 │   ├── controllers/      # Controladores das rotas
+│   ├── entities/         #Classes para representação de tabelas do banco de dados
 │   ├── middlewares/      # Middlewares para requisições
 │   ├── repositories/     # Repositório de dados
         ├──interfaces/    #Contratos para os repositórios
