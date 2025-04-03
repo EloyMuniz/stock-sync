@@ -30,18 +30,18 @@ npm install
 
 - **Criação da migração**:
   ```bash
-  npx typeorm migration:generate -d src/data-source.ts -n NomeDaMigracao
+  npx typeorm-ts-node-commonjs migration:generate -d src/data-source.ts -n NomeDaMigracao
   ```
 - **Rodar as migrações no banco**:
 
   ```bash
-  npx typeorm migration:run -d src/data-source.ts
+  npx typeorm-ts-node-commonjs migration:run -d src/data-source.ts
   ```
 
 - **Reverter última migração (se necessário)**:
 
   ```bash
-  npx typeorm migration:revert -d src/data-source.ts
+  npx typeorm-ts-node-commonjs migration:revert -d src/data-source.ts
 
   ```
 
@@ -65,10 +65,10 @@ backend-project-cnpj/
 ├── src/                  # Código fonte
 │   ├── errors/           # Erros customizáveis
 │   ├── controllers/      # Controladores das rotas
-│   ├── entities/         #Classes para representação de tabelas do banco de dados
+│   ├── entities/         # Classes para representação de tabelas do banco de dados
 │   ├── middlewares/      # Middlewares para requisições
 │   ├── repositories/     # Repositório de dados
-        ├──interfaces/    #Contratos para os repositórios
+        ├──interfaces/    # Contratos para os repositórios
 │   ├── routes/           # Definição das rotas
 │   ├── services/         # Regras de negócio
 │   ├── utils/            # Funções auxiliares
